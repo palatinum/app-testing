@@ -1,5 +1,5 @@
 {
-    "name": "carlos/app-testing",
+    "name": "palatinum/app-testing",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -10,11 +10,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "adodb/adodb-php": "dev-master",
         "vlucas/phpdotenv": "5.4.x-dev",
         "symfony/http-foundation": "5.4.x-dev",
-        "illuminate/database": "8.x-dev",
-        "monolog/monolog": "2.x-dev"
+        "illuminate/database": "8.x-dev"
     },
     "autoload": {
         "psr-4": {
