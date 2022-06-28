@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "75bedd2e-0409-47db-aa23-0b7945de388e",
+		"name": "App Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Webhook - subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"subscribe\",\r\n    \"data\": {\r\n        \"client_id\": 123,\r\n        \"date\": \"2022-06-24 14:23:12\",\r\n        \"email\": \"dsasdas@ddasda.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook - unsubscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"unsubscribe\",\r\n    \"data\": {\r\n        \"client_id\": 123,\r\n        \"date\": \"2022-06-24 14:23:12\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook - payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"payment\",\r\n    \"data\": {\r\n        \"billing_id\": 454643,\r\n        \"client_id\": 123,\r\n        \"date\": \"2022-06-24 14:23:12\",\r\n        \"status\": \"OK\",\r\n        \"amount\": 22.45\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "webhook/subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"subscribe\",\r\n    \"data\": {\r\n        \"client_id\": 123,\r\n        \"date\": \"2022-06-24 14:23:12\",\r\n        \"email\": \"dsasdas@ddasda.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/webhook/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webhook",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "webhook/unsubscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"unsubscribe\",\r\n    \"data\": {\r\n        \"client_id\": 123,\r\n        \"date\": \"2022-06-24 14:23:12\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/webhook/unsubscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webhook",
+						"unsubscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "webhook/payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"payment\",\r\n    \"data\": {\r\n        \"billing_id\": 454643,\r\n        \"client_id\": 123,\r\n        \"date\": \"2022-06-24 14:23:12\",\r\n        \"status\": \"OK\",\r\n        \"amount\": 22.45\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/webhook/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webhook",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
