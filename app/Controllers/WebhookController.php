@@ -16,6 +16,9 @@ class WebhookController extends Controller {
     public function handle () {
         $this->validateWebhook();
         $webhook = $this->getWebhook();
+        if(!$webhook) {
+            throw new BadRequestException(json_encode('Webhook type not supported'), 400);
+        }
         $webhookProcessor = new WebhookProcessor();
         $response = $webhookProcessor->handle($webhook);
         $response = new JsonResponse($response, 200);
