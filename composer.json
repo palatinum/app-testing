@@ -4,8 +4,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Carlos Andrés García Maldonado",
-            "email": "cagmaldonado92@gmail.com"
+            "name": "Carlos Andrés García Maldonado"
         }
     ],
     "minimum-stability": "dev",
